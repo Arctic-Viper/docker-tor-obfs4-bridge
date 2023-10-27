@@ -2,15 +2,17 @@ Log notice stdout
 
 # default: ~/.tor
 DataDirectory /var/lib/tor
-
 # disable socks proxy
 SOCKSPort 0
-
 BridgeRelay 1
 ServerTransportPlugin obfs4 exec /usr/bin/lyrebird
 ExtORPort auto
 ORPort {OR_PORT}
 ServerTransportListenAddr obfs4 0.0.0.0:{PT_PORT}
-
-Nickname FPHmmrleObfs4Bridge
+Nickname [NICKNAME]
 ContactInfo {CONTACT_INFO}
+AddressDisableIPv6 {DISABLE_IPV6}
+AccountingMax {ACCOUNTINGMAX}
+RelayBandwidthRate {BANDWIDTHRATE}
+RelayBandwidthBurst {BANDWIDTHBURST}
+NoExec {NOEXEC}

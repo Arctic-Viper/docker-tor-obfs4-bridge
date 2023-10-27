@@ -24,6 +24,12 @@ RUN apk add --no-cache tor=$TOR_PACKAGE_VERSION \
 ENV OR_PORT=
 ENV PT_PORT=
 ENV CONTACT_INFO=
+ENV NICKNAME=
+ENV DISABLE_IPV6=
+ENV ACCOUNTINGMAX=
+ENV BANDWIDTHRATE=
+ENV RelayBandwidthBurst=
+ENV NoExec=
 COPY torrc.template entrypoint.sh /
 RUN chmod -c a+rX /torrc.template /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]

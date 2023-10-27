@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2023-10-23 - Forked by Arc :O
+### Added
+- torrc.template, entrypoint.sh, Dockerfile:
+  - Added `NICKNAME`
+  - Added `ACCOUNTINGMAX`
+  - Added `RELAYBANDWIDTHRATE`
+  - Added `RELAYBANDWIDTHBURST`
+  - Added `NOEXEC`
+  - Added `ADDRESSDISABLEIPV6`
+
 ## [Unreleased]
 ### Changed
 - replaced [obfs4proxy](https://web.archive.org/web/20230826165902/https://gitlab.com/yawning/obfs4)

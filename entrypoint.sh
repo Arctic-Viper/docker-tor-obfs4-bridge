@@ -10,6 +10,12 @@ set -x
 sed -e "s#{OR_PORT}#$OR_PORT#" \
     -e "s#{PT_PORT}#$PT_PORT#" \
     -e "s#{CONTACT_INFO}#$CONTACT_INFO#" \
+    -e "s#{NICKNAME}#$NICKNAME#" \
+    -e "s#{ACCOUNTINGMAX}#$ACCOUNTINGMAX" \
+    -e "s#{RELAYBANDWIDTHRATE}#$RELAYBANDWIDTHRATE#" \
+    -e "s#{RELAYBANDWIDTHBURST}#$RELAYBANDWIDTHBURST#" \
+    -e "s#{NOEXEC}#$NOEXEC#" \
+    -e "s#{ADDRESSDISABLEIPV6}#$ADDRESSDISABLEIPV6#" \
     /torrc.template >/tmp/torrc
 
 exec "$@"
