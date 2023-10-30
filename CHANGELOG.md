@@ -9,10 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - torrc.template, entrypoint.sh, Dockerfile:
   - Added `NICKNAME`
   - Added `ACCOUNTINGMAX`
-  - Added `RELAYBANDWIDTHRATE`
-  - Added `RELAYBANDWIDTHBURST`
+  - Added `BANDWIDTHRATE`
+  - Added `BANDWIDTHBURST`
   - Added `NOEXEC`
-  - Added `ADDRESSDISABLEIPV6`
+  - Added `DISABLEIPV6`
 
 ## [Unreleased]
 ### Changed

@@ -28,8 +28,9 @@ ENV NICKNAME=
 ENV DISABLE_IPV6=
 ENV ACCOUNTINGMAX=
 ENV BANDWIDTHRATE=
-ENV RelayBandwidthBurst=
-ENV NoExec=
+ENV BANDWIDTHBURST=
+ENV NOEXEC=
+ENV DISABLE_IPV6=
 COPY torrc.template entrypoint.sh /
 RUN chmod -c a+rX /torrc.template /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
