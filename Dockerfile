@@ -13,7 +13,7 @@ ARG TOR_PACKAGE_VERSION=0.4.8.7-r0
 ARG LYREBIRD_PACKAGE_VERSION=0.1.0-r2
 RUN apk add --no-cache tor=$TOR_PACKAGE_VERSION \
     && apk add --no-cache lyrebird=$LYREBIRD_PACKAGE_VERSION \
-        --repository https://dl-cdn.alpinelinux.org/alpine/edge/testing/x86_64/
+        --repository https://dl-cdn.alpinelinux.org/alpine/edge/testing/
 
 #RUN apk add --no-cache \
 #        less \
