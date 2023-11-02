@@ -1,0 +1,23 @@
+  obfs4-bridge-apline:
+    image: 
+    restart: unless-stopped
+    container_name: obfs4-bridge-alpine
+    networks:
+      - obfs4_bridge_external_network
+    ports:
+      - 3307:3307
+      - 8443:8443
+    environment:
+      - OR_PORT=3307 IPv4Only
+      - PT_PORT=8443
+      - NICKNAME=arcbridge
+      - CONTACT_INFO=22bee1d8-c23d-4e47-8862-6b6b2515b5a8@simplelogin.com
+     #- DISABLE_IPV6=
+     #- ACCOUNTINGMAX=
+     #- ACCOUNTINGSTART=
+     #- BANDWIDTHRATE=
+     #- BANDWIDTHBURST=
+     #- EXITRELAY=
+     #- DISABLE_IPV6=
+    volumes:
+      - tor_bridge_apline:/var/lib/tor
